@@ -37,6 +37,8 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:orientation="vertical">
+                <include layout="@layout/fragment_assignment_tabyout"/>
+                <!-->
                 <TextView
                     android:id="@+id/tv_topView"
                     android:layout_width="match_parent"
@@ -45,8 +47,10 @@
                     android:background="#3be42f"
                     android:textSize="30sp"
                     android:gravity="center"/>
+                <!-->
             </LinearLayout>
-
+            <include layout="@layout/content_recy_assign"/>
+            <!-->
             <TextView
                 android:id="@+id/tv_contentView"
                 android:layout_width="match_parent"
@@ -56,6 +60,7 @@
                 android:background="#dc7f28"
                 android:paddingTop="160dp"
                 android:gravity="top|center_horizontal"/>
+                <!-->
 
         </LinearLayout>
     </com.example.mayn.qingju.customcontrol.ObservableScrollView>
