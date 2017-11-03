@@ -72,7 +72,7 @@ public class AssignmentFragment extends Fragment {
     public static AssignmentFragment newInstance() {
 
         Bundle args = new Bundle();
-        args.putString("text", "转让");
+        args.putString("text", "转让界面");
         AssignmentFragment fragment = new AssignmentFragment();
         fragment.setArguments(args);
         return fragment;
