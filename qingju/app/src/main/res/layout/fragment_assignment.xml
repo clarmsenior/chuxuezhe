@@ -49,8 +49,17 @@
                     android:gravity="center"/>
                 <!-->
             </LinearLayout>
-            <include layout="@layout/content_recy_assign"/>
+
+
+            <include
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                layout="@layout/content_recy_assign"/>
+
+
             <!-->
+
+
             <TextView
                 android:id="@+id/tv_contentView"
                 android:layout_width="match_parent"
