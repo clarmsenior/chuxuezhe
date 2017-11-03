@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mayn.qingju.customcontrol.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view_hover">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <include
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        layout="@layout/zhuanrang_head" />
+
+        <include
+            android:tag="aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/fragment_assignment_tabyout"
+            android:background="#AAff0000"
+            android:orientation="horizontal"
+            android:id="@+id/head_bar_linear">
+
+
+        </include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e8e8"
+            android:paddingTop="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</com.example.mayn.qingju.customcontrol.MyScrollView>
