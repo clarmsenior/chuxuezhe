@@ -63,7 +63,6 @@ public class AssignmentFragment extends Fragment {
     private int mLoadCount = 0;
     SimpleAdapter adapter;
     GridLayoutManager layoutManager;
-    private boolean fixedFlag = false, resetFlag = false;
     List<Person>personList=new ArrayList<>();
     public AssignmentFragment() {
 
@@ -92,18 +91,11 @@ public class AssignmentFragment extends Fragment {
         recyclerViewTestRv.setHasFixedSize(true);
         adapter = new SimpleAdapter(personList,getContext());
         layoutManager = new GridLayoutManager(getContext(),2);
-
-
-
-
         recyclerViewTestRv.setLayoutManager(layoutManager);
-
-        recyclerViewTestRv.setNestedScrollingEnabled(false);
         recyclerViewTestRv.setAdapter(adapter);
 //        xRefreshView1.setAutoLoadMore(false);
         xrefreshview.setPinnedTime(1000);
         xrefreshview.setMoveForHorizontal(true);
-
         /*ViewTreeObserver viewTreeObserver = llTopView.getViewTreeObserver();
         viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -119,13 +111,6 @@ public class AssignmentFragment extends Fragment {
 
             }
         });*/
-
-        svContentView.post(new Runnable() {
-            @Override
-            public void run() {
-                svContentView.scrollTo(0,llTopView.getTop());
-            }
-        });
         xrefreshview.setXRefreshViewListener(new XRefreshView.SimpleXRefreshListener() {
 
             @Override
@@ -157,17 +142,7 @@ public class AssignmentFragment extends Fragment {
                 }, 1000);
             }
         });
-        svContentView.setFixHeadListener(new ObservableScrollView.OnFixHeadListener() {
-            @Override
-            public void onFix() {
-                enableNestedScrolling(recyclerViewTestRv);
-            }
 
-            @Override
-            public void onReset() {
-                disableNestedScrolling(recyclerViewTestRv);
-            }
-        });
         svContentView.setOnObservableScrollViewScrollChanged(new ObservableScrollView.OnObservableScrollViewScrollChanged() {
             @Override
             public void onObservableScrollViewScrollChanged(int l, int t, int oldl, int oldt) {
@@ -216,45 +191,12 @@ public class AssignmentFragment extends Fragment {
     }
 
     private void initData() {
-        for (int i = 0; i <3; i++) {
+        for (int i = 0; i < 60; i++) {
             Person person = new Person("name" + i, "" + i);
             personList.add(person);
         }
     }
 
-    private void enableNestedScrolling(RecyclerView recyclerView) {
-        if (recyclerView != null) {
-            if (!fixedFlag) {
-                setFixedFlag();
-                recyclerView.setNestedScrollingEnabled(true);
-            }
-        }
-    }
 
-    //Disable nested scrolling of recyclerView in ScrollView
-    private void disableNestedScrolling(RecyclerView recyclerView) {
-        if (recyclerView != null) {
-            if (!resetFlag) {
-                setResetFlag();
-                recyclerView.setNestedScrollingEnabled(false);
-            }
-        }
-    }
-    private void setFixedFlag() {
-        setFlag(false);
-    }
 
-    private void setResetFlag() {
-        setFlag(true);
-    }
-
-    private void setFlag(boolean reset) {
-        if (reset) {
-            resetFlag = true;
-            fixedFlag = false;
-        } else {
-            fixedFlag = true;
-            resetFlag = false;
-        }
-    }
 }
