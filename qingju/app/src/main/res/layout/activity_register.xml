@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayn.qingju.loginregister.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_zidingyi" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/beijingse">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="273dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:weightSum="4"
+                    android:id="@+id/linearLayout5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/touming">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/divider_line_color"
+
+                            >
+
+                            <AutoCompleteTextView
+
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11dp"
+                                android:backgroundTint="@color/touming"
+                                android:drawableLeft="@mipmap/shangcheng_login_dianhua"
+                                android:drawablePadding="10dp"
+                                android:hint="手机号/会员名"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <include layout="@layout/divider_line" />
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/touming">>
+
+                        <TextView
+                            android:background="@drawable/shape_zhaiwu"
+                            android:id="@+id/sendcode"
+                            android:layout_width="84dp"
+                            android:layout_height="40dp"
+                            android:text="发送验证码"
+                            android:gravity="center"
+                            android:textColor="@color/touming"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/divider_line_color"
+
+                            >
+
+                            <AutoCompleteTextView
+
+                                android:id="@+id/yanzhengma"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11dp"
+                                android:backgroundTint="@color/touming"
+                                android:drawableLeft="@mipmap/zhuce_yanzhengma"
+                                android:drawablePadding="10dp"
+                                android:hint="请输入验证码"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <include
+                            layout="@layout/divider_line"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/touming">>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/divider_line_color"
+
+                            >
+
+                            <AutoCompleteTextView
+
+                                android:id="@+id/mima_zhece"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11dp"
+                                android:backgroundTint="@color/touming"
+                                android:drawableLeft="@mipmap/zhuce_mima"
+                                android:drawablePadding="10dp"
+                                android:hint="请输入6-16字母和数字组合"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <include
+                            layout="@layout/divider_line"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/touming">>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/divider_line_color"
+
+                            >
+
+                            <AutoCompleteTextView
+
+                                android:id="@+id/querenmima"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="11dp"
+                                android:backgroundTint="@color/touming"
+                                android:drawableLeft="@mipmap/zhuce_mima"
+                                android:drawablePadding="10dp"
+                                android:hint="请再次输入密码"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:singleLine="true" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:background="@drawable/shape_zhaiwu"
+                    android:id="@+id/btn_zhuce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="点击注册"
+                    android:textColor="@color/touming"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
