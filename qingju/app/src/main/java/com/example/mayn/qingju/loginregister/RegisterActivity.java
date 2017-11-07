@@ -1,11 +1,7 @@
 package com.example.mayn.qingju.loginregister;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.annotation.ColorInt;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -13,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.mayn.qingju.R;
 import com.example.mayn.qingju.base.BaseActivity;
 import com.orhanobut.logger.AndroidLogAdapter;
