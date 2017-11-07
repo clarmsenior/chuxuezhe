@@ -19,10 +19,13 @@
         <activity android:name=".base.BaseActivity" />
         <activity
             android:name=".loginregister.LoginActivity"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login" />
+        <activity android:name=".loginregister.RegisterActivity" />
+        <activity android:name=".loginregister.FgpsActivity"></activity>
+        <activity android:name=".loginregister.AlipaybindActivity">
 
         </activity>
-        <activity android:name=".loginregister.RegisterActivity">
+        <activity android:name=".loginregister.UserselectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

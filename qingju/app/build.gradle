@@ -30,7 +30,6 @@ dependencies {
     //retrofit2与rxjava2依赖
     //
     compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     compile 'com.android.support:support-v4:26.+'
     compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
     compile 'com.bigkoo:convenientbanner:2.0.5'
@@ -49,7 +48,8 @@ dependencies {
     compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
     compile 'com.android.support:cardview-v7:26.0.0-alpha1'
     compile 'com.android.support:design:26.+'
-    testCompile 'junit:junit:4.12'
     compile 'com.github.GrenderG:Toasty:1.2.5'
     compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
 }

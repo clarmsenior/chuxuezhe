@@ -4,12 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mayn.qingju.loginregister.RegisterActivity">
+    tools:context="com.example.mayn.qingju.loginregister.RegisterActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-      >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +33,7 @@
                 android:background="@color/beijingse">
 
                 <LinearLayout
+                    android:id="@+id/linearLayout5"
                     android:layout_width="match_parent"
                     android:layout_height="273dp"
                     android:layout_alignParentLeft="true"
@@ -32,8 +42,7 @@
                     android:layout_marginTop="20dp"
                     android:background="@color/colorAccent"
                     android:orientation="vertical"
-                    android:weightSum="4"
-                    android:id="@+id/linearLayout5">
+                    android:weightSum="4">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -63,8 +72,8 @@
                                 android:singleLine="true" />
 
                         </android.support.design.widget.TextInputLayout>
-                        <include layout="@layout/divider_line" />
 
+                        <include layout="@layout/divider_line" />
 
 
                     </RelativeLayout>
@@ -76,18 +85,18 @@
                         android:background="@color/touming">>
 
                         <TextView
-                            android:background="@drawable/shape_zhaiwu"
                             android:id="@+id/sendcode"
                             android:layout_width="84dp"
                             android:layout_height="40dp"
-                            android:text="发送验证码"
-                            android:gravity="center"
-                            android:textColor="@color/touming"
-                            android:layout_centerVertical="true"
-                            android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="12dp"
                             android:layout_marginRight="12dp"
-                            android:layout_marginEnd="12dp" />
+                            android:background="@drawable/shape_zhaiwu"
+                            android:gravity="center"
+                            android:text="发送验证码"
+                            android:textColor="@color/touming" />
 
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="250dp"
@@ -111,8 +120,8 @@
                                 android:singleLine="true" />
 
                         </android.support.design.widget.TextInputLayout>
-                        <include
-                            layout="@layout/divider_line"/>
+
+                        <include layout="@layout/divider_line" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -120,6 +129,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/touming">>
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -142,8 +152,8 @@
                                 android:singleLine="true" />
 
                         </android.support.design.widget.TextInputLayout>
-                        <include
-                            layout="@layout/divider_line"/>
+
+                        <include layout="@layout/divider_line" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -151,6 +161,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/touming">>
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -178,18 +189,18 @@
                 </LinearLayout>
 
                 <Button
-                    android:background="@drawable/shape_zhaiwu"
                     android:id="@+id/btn_zhuce"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/linearLayout5"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="68dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="68dp"
+                    android:background="@drawable/shape_zhaiwu"
                     android:text="点击注册"
                     android:textColor="@color/touming"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
             </RelativeLayout>
         </LinearLayout>
